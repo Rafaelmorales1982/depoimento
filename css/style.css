@@ -1,0 +1,222 @@
+/*=====================SEÇÃO TAGS==========================*/
+
+/*Zerando body, h1 para colar o cabeçalho nas bordas do site*/
+body {
+  margin: 0;
+  text-align: center;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+
+  /*cor do texto padrão para o nosso site*/
+  color: #000000;
+}
+/*Zerando body, h1 para colar o cabeçalho nas bordas do site*/
+h1 {
+  margin: 0;
+  margin: 0 auto 0 auto;
+  /*A propriedade CSS define a altura de uma caixa de linha.
+ É comumente usado para definir a distância entre linhas de texto. */
+  line-height: 2;
+
+  /*Fonte do google fonts*/
+  font-family: "Sigmar", cursive;
+  /*Transforma seu texto em maiúsculo*/
+  text-transform: uppercase;
+  color: #66bfbf;
+  /*espaçamento entre as letras*/
+  /*converter todos para rem - ele não herda do pai*/
+  letter-spacing: 0.15625rem; /*2.5 / 16px = 0.15625em  * 100 = 15.625% */
+
+  /*media porcentagem  70px / 16px = 4.375em  x 100 = 437.5% */
+  /*converter todos para rem - ele não herda do pai*/
+  font-size: 4.375rem;
+  /*deixando peso da fonte normal*/
+  font-weight: normal;
+}
+/*fonts externas do google fonts*/
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  /*40px / 16px = 2.5rem   o rem não herda nada do pai, bom sempre utilizar esse*/
+  font-size: 2rem;
+  color: #66bfbf;
+}
+
+a,
+h3 {
+  color: #11999e;
+}
+
+p {
+  /*espaçamento entre a linhas do texto*/
+  line-height: 2;
+  color: #000000;
+}
+
+hr {
+  border: dotted #000 6px;
+  /*tirando a segunda linha de baixo*/
+  border-bottom: none;
+  /*tamanho*/
+  width: 5%;
+  /*deixar mais alinhado*/
+  margin: 100px auto;
+}
+/*=========================== SEÇÃO CLASSES==================*/
+
+.top-container {
+  background-color: #394867;
+  /*esta posição a pode sair da página */
+  position: relative;
+  padding-top: 5%;
+}
+
+.efeito {
+  text-decoration: underline;
+  color: #11999e;
+
+  font-family: "Montserrat", sans-serif;
+  /*18px / 16px = 1.125em * 100 = 112.5%*/
+  /*converter todos para rem - ele não herda do pai*/
+  font-size: 1.125rem;
+  /* 2.5px px dividido por 16px da o resultado abaixo deixar mais responsivo*/
+  /*0.156em x 100 =15.6% */
+  /*converter todos para rem - ele não herda do pai*/
+  letter-spacing: 0.156rem;
+}
+
+.logia {
+  font-family: "Montserrat", sans-serif;
+  color: #11999e;
+  /*18px / 16px = 1.125em * 100 = 112.5%*/
+  /*converter todos para rem - ele não herda do pai*/
+  font-size: 1.125rem;
+  /* 2.5px px dividido por 16px da o resultado abaixo deixar mais responsivo*/
+  /*0.156em x 100 =15.6% */
+  /*converter todos para rem - ele não herda do pai*/
+  letter-spacing: 0.156rem;
+}
+
+.cerebro-tech-cima {
+  /*esta posição fica dentro do container sem sair da página*/
+  position: absolute;
+  right: 20%;
+  top: 38%;
+}
+
+.cerebro-tech-baixo {
+  position: absolute;
+  left: 20%;
+  bottom: 1%;
+}
+
+.img-topo {
+  width: 20%;
+}
+
+.skill-row {
+  /*deixando com 50% da página*/
+  width: 50%;
+  /*dessa forma centraliza de forma automática
+   100px top auto direita 10px bottom  auto esquerdo */
+  margin: 100px auto 10px auto;
+  /*alinhar a esquerda*/
+  text-align: left;
+}
+
+.code-img {
+  width: 30%; /*tamanho da imagem*/
+  float: left; /*flutando a imagem a esquerda*/
+  margin-right: 30px; /*espaçamento*/
+}
+.chilli-img {
+  width: 20%; /*tamanho da imagem*/
+  float: right; /*flutuante a imagem a direita*/
+  margin-left: 30px; /*espaçamento*/
+}
+
+.middle-container {
+  margin: 100px auto;
+}
+
+.contact-me {
+  /*tamanho da div*/
+  width: 40%;
+  /*40px top - auto direita - 60px baixo*/
+  margin: 40px auto 60px;
+  position: relative;
+}
+
+.bottom-container {
+  background-color: #394867;
+}
+
+.tube-img {
+  width: 5%;
+  position: relative;
+  top: 17px;
+  left: -67px;
+}
+
+.tips-img {
+  width: 8%;
+
+  position: relative;
+  top: 11px;
+  left: 1px;
+}
+
+.instagram-img {
+  width: 5%;
+
+  position: relative;
+  top: 17px;
+  left: 62px;
+}
+
+.zap-img {
+  width: 8%;
+  position: absolute;
+  bottom: -1%;
+  right: 22%;
+}
+.copyright {
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+
+.avengers{
+  text-align: center;
+}
+
+/*-----------Código pego do site css3 button generator------*/
+/*https://css3buttongenerator.com/*/
+.btn {
+
+  background: #11999e;
+  background-image: -webkit-linear-gradient(top, #11999e, #2980b9);
+  background-image: -moz-linear-gradient(top, #11999e, #2980b9);
+  background-image: -ms-linear-gradient(top, #11999e, #2980b9);
+  background-image: -o-linear-gradient(top, #11999e, #2980b9);
+  background-image: linear-gradient(to bottom, #11999e, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
